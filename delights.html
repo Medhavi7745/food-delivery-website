@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+    <title>Flavours of India</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+
+<body>
+    <h1 id="flav">Flavours of India</h1>
+    <div class="nav">
+        <ul>
+            <li><a href="delights.html" target="_self" onclick="showimg()">HOME</a></li>
+            <li><a href="about_us_1.html" target="_self">ABOUT US</a></li>
+            <li><a href="mailto: gdmfpch7745@gmail.com" target="_self">CONTACT</a></li>
+            <li onclick = "showTabs(6)"><a> CART </a> <span id = "count">0</span></li>
+        </ul>
+    </div>
+
+    <div class="text">
+        Choose one of our <span id="sel"> APPETIZING</span> regional cuisines to try by clicking on the map!</div>
+        <img id="mapind" src="./images/mapindia.png" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="_blank" alt="North" title="North" onclick="showTabs(0)" 
+            coords="150,504,141,486,131,470,117,460,120,444,109,433,101,420,116,405,127,390,137,390,145,401,159,397,174,394,183,382,189,376,197,366,212,357,223,338,229,327,239,325,247,313,254,301,269,285,269,266,281,253,290,251,285,239,272,235,262,229,251,221,244,206,241,182,241,166,248,159,257,153,250,140,246,130,235,123,225,119,219,108,229,101,237,93,245,92,253,90,261,87,276,84,290,85,297,85,301,93,309,95,316,103,325,109,337,121,349,128,358,133,365,137,379,133,394,129,408,126,419,126,431,130,438,142,438,152,436,161,422,173,417,185,404,187,405,199,402,207,408,214,412,223,417,232,410,237,402,244,393,237,388,242,388,253,392,262,394,276,397,288,386,285,374,287,363,295,361,309,354,319,345,331,343,341,341,361,346,384,351,395,346,409,354,422,357,432,352,441,363,438,372,438,365,444,354,452,341,458,329,467,321,476,321,486,329,492,338,492,345,497,332,501,330,511,335,519,330,525,326,532,314,525,307,529,302,536,288,539,293,526,300,516,287,513,280,500,269,501,269,510,264,519,268,527,269,540,263,549,256,557,253,564,238,562,221,550,216,530,204,521,190,515,151,503,109,433" 
+            shape="poly">
+            <area target="_blank" alt="Central" title="Central" onclick="showTabs(1)"
+            coords="401,281,398,292,373,287,364,297,359,310,351,325,341,343,339,357,343,375,347,388,351,397,346,410,351,421,356,429,350,437,360,437,369,437,376,438,369,445,357,451,346,458,333,467,322,477,321,487,330,493,342,489,346,501,333,501,330,511,334,519,330,530,317,529,306,530,296,539,288,536,293,524,299,519,292,514,278,511,277,501,267,505,262,520,265,529,265,540,260,553,257,564,244,566,244,577,233,589,240,593,234,598,237,609,245,608,253,617,263,617,274,625,289,628,298,629,305,637,317,632,329,621,343,617,345,626,358,627,369,621,380,625,393,625,403,621,414,624,427,626,436,625,446,633,442,647,443,657,446,666,441,672,442,684,450,690,456,701,444,701,437,712,437,723,446,729,450,740,460,747,464,754,474,740,485,737,490,725,500,709,490,682,497,676,505,682,513,680,505,669,504,656,507,647,514,637,529,637,537,629,544,609,557,595,569,577,556,557,540,538,541,519,536,505,544,491,555,483,571,478,556,462,552,453,565,448,556,436,547,421,533,422,519,419,511,409,497,407,483,403,468,395,452,382,439,377,440,357,445,339,460,324,449,315,433,306,418,296" 
+            shape="poly">
+            <area target="_blank" alt="East" title="East" onclick="showTabs(2)"
+            coords="550,420,555,436,564,443,553,451,559,459,560,467,573,478,559,480,549,490,536,496,541,518,537,533,543,543,555,552,561,571,568,575,561,586,557,592,544,606,540,620,538,629,529,635,511,636,507,649,506,662,507,678,516,678,512,683,490,675,490,684,493,693,497,703,497,714,492,726,481,736,475,747,466,752,481,755,497,747,505,742,509,731,513,738,518,734,528,730,533,720,541,710,552,714,561,720,570,718,577,710,589,705,598,692,605,682,610,686,623,682,631,676,645,666,648,656,656,652,649,634,658,623,670,620,680,612,692,601,694,609,703,607,706,614,718,615,721,596,715,578,713,559,703,549,704,536,703,523,685,516,685,502,695,494,710,489,702,481,685,473,682,464,693,452,689,445,702,454,710,450,719,459,726,462,733,453,736,438,718,434,701,423,681,424,684,434,678,451,661,452,647,451,633,449,615,449,603,439,593,444,577,435,571,424,560,418" 
+            shape="poly">
+            <area target="_blank" alt="North East" title="North East" onclick="showTabs(5)" 
+            coords="678,420,679,409,682,398,691,394,699,392,705,401,699,411,700,422,708,427,714,430,731,436,740,438,749,434,770,436,799,432,804,418,797,408,796,398,809,396,824,386,834,367,848,361,862,351,875,336,882,342,898,342,902,335,918,326,926,332,922,340,931,339,936,348,927,359,933,363,943,360,956,362,963,372,950,386,958,400,944,397,930,402,917,413,906,425,898,435,900,447,892,467,887,476,894,484,885,504,878,525,863,519,850,520,858,544,853,564,854,589,835,588,833,568,824,552,818,534,809,544,806,555,802,562,795,553,786,543,789,525,802,518,814,510,818,496,823,496,812,488,797,488,785,488,768,488,754,488,738,484,738,467,734,455,734,444,723,433" 
+            shape="poly">
+            <area target="_blank" alt="West" title="West" onclick="showTabs(4)" 
+            coords="54,535,54,524,66,524,72,513,84,513,99,513,106,519,114,517,126,513,132,512,135,519,145,516,149,507,163,506,173,506,181,509,190,515,196,520,208,520,210,529,217,536,214,543,221,551,232,557,238,563,245,574,240,583,234,587,231,594,233,607,245,607,253,618,264,618,271,624,297,627,302,636,317,632,333,618,345,616,349,622,357,628,369,623,377,623,389,627,402,620,411,623,425,627,438,625,447,633,443,646,446,658,442,672,444,681,452,689,457,698,446,701,437,711,436,718,426,720,424,706,418,690,408,693,397,692,389,684,376,680,371,691,365,697,354,705,357,712,352,724,345,730,333,738,323,749,314,752,305,758,305,764,290,765,279,759,280,773,270,782,257,779,247,787,237,787,231,793,236,804,233,813,225,822,229,835,225,845,221,849,202,809,196,753,189,709,186,680,196,650,189,625,191,594,196,594,185,593,183,616,170,630,153,641,126,643,99,619,81,600,73,583,92,585,105,578,118,570,126,559,113,561,102,569,84,567,66,553" 
+            shape="poly">
+            <area target="_blank" alt="South" title="South" onclick="showTabs(3)" 
+            coords="221,849,230,855,231,864,234,877,241,888,240,902,247,919,253,938,259,955,271,970,278,980,283,999,292,1017,294,1029,299,1053,304,1066,316,1080,329,1091,341,1091,356,1083,367,1062,383,1053,400,1052,390,1041,403,1020,420,1016,419,976,422,952,439,924,432,874,431,844,446,822,457,823,474,806,487,806,505,795,506,780,535,762,564,736,587,709,570,718,557,719,546,710,532,722,530,731,523,735,515,739,509,731,506,744,495,747,468,753,455,742,446,724,427,722,417,691,396,691,379,681,372,695,359,702,359,715,347,729,334,737,319,751,310,757,307,764,291,765,281,759,281,773,268,779,251,783,236,788,236,803,227,820,231,831" 
+            shape="poly">
+    </map>
+    <div class="cont">
+        <div class="head" id="north">
+            <h1>Nimble North</h1>
+        </div>
+        <br>
+        <div>
+            <img src="./images/n1.png" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+            <h4 class="name">Dum Aloo</h4>
+            <p>Dum aloo, also called alu dum, is a traditional Indian dish with origins in Kashmir. The dish consists of potatoes, tomatoes, and onions that are cooked together in curry or masala sauce. 
+            </p>
+            <br>
+            <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 460</button>
+            <button class="cart" id="0" onclick = "add(this)">Add to Cart</a></button>
+        </div>
+    
+        <div>
+            <img src="./images/n2.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show2(this)" onmouseout="hide(this)">
+            <h4 class="name">Chhole Bhature</h4>
+            <p>Chole bhature is a food dish popular in the Northern areas of the Indian subcontinent.It is a combination of chana masala (spicy white chickpeas) and bhatura/puri, a deep-fried bread made from refined flour.
+            </p>
+            <br>
+            <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 150</button>
+            <button class="cart" id="1" onclick = "add(this)">Add to Cart</button>
+        </div>
+    
+        <div>
+            <img src="./images/n3.png" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+            <h4 class="name">Chaat Platter</h4>
+            <p>Chaat is Indian style street food which comprises a lot of delicious dishes like Paapdi Chat, Matar Ki Chaat, Aloo Chaat, Farali Aloo Chaat, Aam Aur Chana Chaat, and Dahi Puri etc.
+            </p>
+            <br>
+            <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 110</button>
+            <button class="cart" id="2" onclick = "add(this)">Add to Cart</button>
+        </div>
+    
+        <div>
+            <img src="./images/n4.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show2(this)" onmouseout="hide(this)">
+            <h4 class="name">Makke Ki roti Sarso Da Saag</h4>
+            <p>Makki ki roti is a popular Punjabi flatbread made from corn flour.Peppery, pungent and deeply nutritious, Punjabi Sarson ka Saag (or Sarson da Saag) is a favorite during the cold North Indian winters, especially when paired with Makki Ki Roti.
+            </p>
+            <br>
+            <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 410</button>
+            <button class="cart" id="3" onclick = "add(this)">Add to Cart</button>
+        </div>
+        <div>
+            <img src="./images/n5.png" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+            <h4 class="name">Hara Dhania Cholia</h4>
+            <p>Hara Chana or green chickpeas is a favorite winter vegetable like hyacinth beans, and it is widely used in Punjabi and Haryanvi cuisine.
+            </p>
+            <br>
+            <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 240</button>
+            <button class="cart" id="4" onclick = "add(this)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="head" id="Central">
+            <h1> Classic Center</h1>
+        </div>
+        <br>
+        <div>
+            <img src="./images/c1.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+            <h4 class="name">Hara Bhara Kebab</h4>
+            <p>Hara bhara kabab are healthy, flavorful, savory pan-fried patties loaded with spinach, green peas and potatoes.They taste great with any chutney dip or sauce.
+            </p>
+            <br>
+            <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 250</button>
+            <button class="cart" id="5" onclick = "add(this)">Add to Cart</button>
+        </div>
+        <div>
+            <img src="./images/c2.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show2(this)" onmouseout="hide(this)">
+            <h4 class="name">Gajar ka Halwa</h4>
+            <p>Gajar Ka Halwa is a carrot-based sweet dessert pudding made by placing grated carrots in a pot containing a specific amount of water, milk and sugar, cardamom and then cooking while stirring regularly. It is often served with a garnish of almonds and pistachios. 
+            </p>
+            <br>
+            <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 560</button>
+            <button class="cart" id="6" onclick = "add(this)">Add to Cart</button>
+        </div>
+        <div>
+            <img src="./images/c3.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+            <h4 class="name">Bhutte Ki Khees</h4>
+            <p>Bhutte ka kees is a popular as well as delicious street food snack from Indore. It is prepared with fresh and tender sweet corn kernels that is first grated and then cooked with fragrant spices and herbs.
+            </p>
+            <br>
+            <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 360</button>
+            <button class="cart" id="7" onclick = "add(this)">Add to Cart</button>
+        </div>
+        <div>
+            <img src="./images/c4.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show2(this)" onmouseout="hide(this)">
+            <h4 class="name">Mawa Bati</h4>
+            <p>Mawa bati is a unique sweet dish found only in Madhya Pradesh. Though it looks more like a large-size gulab jamun, it is crisp and has just the right texture and sweetness. The mawa dough is mixed with dried fruits and then rolled into balls, which are then deep fried and further soaked in sugar syrup. 
+            </p>
+            <br>
+            <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 600/kg</button>
+            <button class="cart" id="8" onclick = "add(this)">Add to Cart</button>
+        </div>
+        <div>
+            <img src="./images/c5.png" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+            <h4 class="name">Agra Ka Petha</h4>
+            <p>It is soft, chewy and candy-like, eaten dry or dipped in sugar syrup (chashni). Petha is known to be made from ash gourd vegetable, also known as winter melon or white pumpkin.
+            </p>
+            <br>
+            <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 560/kg</button>
+            <button class="cart" id="9" onclick = "add(this)">Add to Cart</button>
+        </div>
+    </div>
+    
+    <div class="cont">
+        <div class="head" id="East">
+            <h1>Eager East</h1>
+        </div>
+        <br>
+        <div>
+            <img src="./images/e1.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+            <h4 class="name">Litti Chokha</h4>
+            <p>Litti Chokha is a rustic and traditional dish of stuffed whole wheat dough balls, where the stuffing is a spiced mix of roasted gram flour or roasted black chickpea flour also called sattu. 
+            </p>
+            <br>
+            <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 260</button>
+            <button class="cart" id="10" onclick = "add(this)">Add to Cart</button>
+        </div>
+        <div>
+            <img src="./images/e2.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show2(this)" onmouseout="hide(this)">
+            <h4 class="name">Dhuska</h4>
+            <p>Dhuska is a popular deep-fried snack eaten all over Jharkhand, India. The dish is one of the delicacy of Jharkhandi cuisine. The main ingredients in this savoury fried bread dish are powdered rice, powdered chana dal and sometimes boiled potatoes. The bread is then deep fried. It is often served with any sauce or chutney.
+            </p>
+            <br>
+            <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 450</button>
+            <button class="cart" id="11" onclick = "add(this)">Add to Cart</button>
+        </div>
+        <div>
+            <img src="./images/e3.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+            <h4 class="name">Rasgulla</h4>
+            <p>Rasgulla (literally "syrup filled ball") is a syrupy dessert. It is made from ball-shaped dumplings of chhena dough, cooked in light sugar syrup made of sugar.
+            </p>
+            <br>
+            <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 550/kg</button>
+            <button class="cart" id="12" onclick = "add(this)">Add to Cart</button>
+        </div>
+        <div>
+            <img src="./images/e4.png" class="nw" style="height: 200px; width: 250px" onmouseover = "show2(this)" onmouseout="hide(this)">
+            <h4 class="name">Mitha Khaja</h4>
+            <p>Khaja is a traditional sweet that is popularly consumed in Odisha, especially during the festival time.
+                Khaja is basically flour, sugar and ghee-based dough that is deep fried to make flaky, sweet dessert with spiraling layers of goodness.
+            </p>
+            <br>
+            <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 425/kg</button>
+            <button class="cart" id="13" onclick = "add(this)">Add to Cart</button>
+        </div>
+        <div>
+            <img src="./images/e5.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+            <h4 class="name">Rugra</h4>
+            <p>Rugra is an item which tastes like mushroom and is very delicious to eat. Rugra is basically an indigenous variety of vegetable, rich in protein and minerals and high on calorific value. This is thus a very healthy dish. 
+            </p>
+            <br>
+            <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 320</button>
+            <button class="cart" id="14" onclick = "add(this)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="head" id="south">
+            <h1>Superb South</h1>
+        </div>
+
+        <br>
+    <div>
+        <img src="./images/s1.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+        <h4 class="name">Idli Vada</h4>
+        <p>Idli or idly is a type of savoury rice cake, originating from South India. The cakes are made by steaming a batter consisting of fermented black lentils and rice. The fermentation process breaks down the starches so that they are more readily metabolised by the body.
+        </p>
+        <br>
+        <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 160</button>
+        <button class="cart" id="15" onclick = "add(this)">Add to Cart</button>
+    </div>
+
+    <div>
+        <img src="./images/s2.webp" class="nw" style="height: 200px; width: 250px" onmouseover = "show2(this)" onmouseout="hide(this)">
+        <h4 class="name">Masala Dosa</h4>
+        <p>Masala Dosa, also called Masale dosey, is a South Indian dish. It is a type of dosa and has its origin in the town of Udupi in Karnataka. It is made from rice, lentils, Urad dal, Chana dal, fenugreek, puffed rice, Toor dal, dry red chilli and served with potato curry, chutneys, and sambar.
+        </p>
+        <br>
+        <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 200</button>
+        <button class="cart" id="16" onclick = "add(this)">Add to Cart</button>
+    </div>
+
+    <div>
+        <img src="./images/s3.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+        <h4 class="name">Hyderabadi Biryani</h4>
+        <p>Hyderabadi biryani (also known as Hyderabadi dum biryani) is a style of biryani originating from Hyderabad made with basmati rice and meat (mostly mutton). Originating in the kitchens of the Nizam of Hyderabad, it combines elements of Hyderabadi and Mughlai cuisines. 
+        </p>
+        <br>
+        <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 400</button>
+        <button class="cart" id="17" onclick = "add(this)">Add to Cart</button>
+    </div>
+
+    <div>
+        <img src="./images/s4.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show2(this)" onmouseout="hide(this)">
+        <h4 class="name">Uttapam</h4>
+        <p>Uttapam or Uthappam is a delicious South Indian tiffin breakfast of thick pancakes made with either idli batter or dosa batter. It is a popular and healthy breakfast choice like idli and dosa. 
+        </p>
+        <br>
+        <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 125</button>
+        <button class="cart" id="18" onclick = "add(this)">Add to Cart</button>
+    </div>
+    <div>
+        <img src="./images/s5.jpeg" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+        <h4 class="name">Mysore Pak</h4>
+        <p>Mysore pak is a popular and super delicious Indian sweet from the city of Mysore in the Karnataka state in South India. Mysore pak is made with only three ingredients - gram flour, ghee and sugar. 
+        </p>
+        <br>
+        <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 470/kg</button>
+        <button class="cart" id="19" onclick = "add(this)">Add to Cart</button>
+    </div>
+    </div>
+    <div class="cont">
+        <div class="head" id="West">
+            <h1>Wonderful West</h1>
+        </div>
+
+        <br>
+    <div>
+        <img src="./images/w1.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+        <h4 class="name">Dal Bati Churma</h4>
+        <p>Dal Baati is eaten with Churma popularly in regions of Rajasthan. Churma is a sweet delicacy made of coarsely grounded wheat flour, bajra (millet) flour or semolina. It is made by grinding the fire-baked or fried dough balls and mixing it with ghee, powdered sugar, and dry fruits.
+        </p>
+        <br>
+        <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 160</button>
+        <button class="cart" id="20" onclick = "add(this)">Add to Cart</button>
+    </div>
+    <div>
+        <img src="./images/w2.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show2(this)" onmouseout="hide(this)">
+        <h4 class="name">Vada Pav</h4>
+        <p>Vada Pav is a savory and spicy soft dinner rolls or fluffy buns, referred to as Pav, stuffed with a fried batter coated potato dumpling fritter called Batata Vada and laced with spicy and sweet chutneys. It is a popular vegan street food snack eaten in Mumbai and rest of the Maharashtra state in Western India.
+        </p>
+        <br>
+        <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 60</button>
+        <button class="cart" id="21" onclick = "add(this)">Add to Cart</button>
+    </div>
+    <div>
+        <img src="./images/w3.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+        <h4 class="name">Dhokla</h4>
+        <p>Dhokla is a savoury sponge dish that is native to the Indian state of Gujarat. It is made with a fermented batter that is steamed to a cake-like consistency. The batter consists of a mixture of rice with the pulse Bengal gram,
+        </p>
+        <br>
+        <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 200/kg</button>
+        <button class="cart" id="22" onclick = "add(this)">Add to Cart</button>
+    </div>
+    <div>
+        <img src="./images/w4.webp" class="nw" style="height: 200px; width: 250px" onmouseover = "show2(this)" onmouseout="hide(this)">
+        <h4 class="name">Jalebi Fafda</h4>
+        <p> Fafda is a fried crispy crunchy tasty snack made with besan (gram flour), laced with carom seeds and black pepper. It is a popular Gujarati vegan snack that is highly addictive and scrumptious. 
+        </p>
+        <br>
+        <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 415</button>
+        <button class="cart" id="23" onclick = "add(this)">Add to Cart</button>
+    </div>
+    <div>
+        <img src="./images/w5.jpg" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+        <h4 class="name">Modak</h4>
+        <p>Modak are steamed dumplings with an outer rice flour dough and a coconut-jaggery stuffing.
+        </p>
+        <br>
+        <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 390/kg</button>
+        <button class="cart" id="24" onclick = "add(this)">Add to Cart</button>
+    </div>
+    </div>
+    <div class="cont">
+        <div class="head" id="West">
+            <h1>Natural North East</h1>
+        </div>
+        <br>
+    <div>
+        <img src="./images/ne1.png" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+        <h4 class="name">Bamboo Shoot Dish</h4>
+        <p>Traditionally known as Gaaj, it is a part of North East cuisine. It is used as a pickle. Gaaj is also used in making meat curries. 
+        </p>
+        <br>
+        <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 250</button>
+        <button class="cart" id="25" onclick = "add(this)">Add to Cart</button>
+    </div>
+    <div>
+        <img src="./images/ne2.png" class="nw" style="height: 200px; width: 250px" onmouseover = "show2(this)" onmouseout="hide(this)">
+        <h4 class="name">Banana Stem Dish</h4>
+        <p>The traditional name of the Banana stem is Kol Posola, the small banana tree is used for this. It is mainly dry-fried and eaten as a side dish with rice.
+        </p>
+        <br>
+        <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 270</button>
+        <button class="cart" id="26" onclick = "add(this)">Add to Cart</button>
+    </div>
+    <div>
+        <img src="./images/ne3.webp" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+        <h4 class="name">Kosu</h4>
+        <p>It is a vegetable that grows under the soil and is cooked in various ways, like fried or curry.
+        </p>
+        <br>
+        <button class="price" style = "position: relative; left: 200px; z-index:-1;">Rs 295</button>
+        <button class="cart" id="27" onclick = "add(this)">Add to Cart</button>
+    </div>
+    <div>
+        <img src="./images/ne4.webp" class="nw" style="height: 200px; width: 250px" onmouseover = "show2(this)" onmouseout="hide(this)">
+        <h4 class="name">Dhekiya Xaak</h4>
+        <p>It is a kind of fern, which is healthy and tasty too.  
+        </p>
+        <br>
+        <button class="price style = "position: relative; left: 200px; z-index:-1;"">Rs 150</button>
+        <button class="cart" id="28" onclick = "add(this)">Add to Cart</button>
+    </div>
+    <div>
+        <img src="./images/ne5.webp" class="nw" style="height: 200px; width: 250px" onmouseover = "show1(this)" onmouseout="hide(this)">
+        <h4 class="name">Ooti</h4>
+        <p>Ooti is a Manipuri dish made of yellow hawaitharak (pea), garlic leaf and ginger garnished with pakhon (dill)  
+        </p>
+        <br>
+        <button class="price style = "position: relative; left: 200px; z-index:-1;"">Rs 310</button>
+        <button class="cart" id="29" onclick = "add(this)">Add to Cart</button>
+    </div>
+
+    </div>
+    <div class = "cont">
+        <h1 >CART:<span id="item">0</span></h1>
+    <table border="1" id="tab" style = "position: relative; left: 0px;">
+        <tr>
+            <th>NAME</th>
+            <th>PRICE</th>
+            <th>QUANTITY</th>
+            <th>REMOVE</th>
+            <th>INCREASE</th>
+            <th>DECREASE</th>
+        </tr>
+    </table>
+     
+    <h1 style="left:32%">TOTAL: RS <SPAN id="total">0</SPAN></h1>
+    <button onclick="location.href = 'delights.html'">CHECK OUT</button>
+    </div>
+   
+    <script src = "x.js"></script>
+</body>
+
+</html>
